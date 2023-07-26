@@ -15,7 +15,13 @@ This Project is about fetching the top trending CryptoCoins from CoinMarketCap u
 
 ## Deployment Process
 ### starting up zookeeper server on local host 9092
-@@ -25,4 +25,4 @@ Now your kafka Broker is up , you need to deploy the above code in any on the IDE
+.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+### starting up kafka broker
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+### Creating kafka topic 
+.\bin\windows\kafka-topics.bat --create --topic <topic_name> --replication-factor 1 --partitions 1<br><br>
+Now you kafka Broker is up , you need to deploy the above code in any on the IDE of your choice and you will start seeing the data in your mongodb cluster 
+
 ## Note
 1.Since the kafka and mongo db connector are not part of the default spark package you need to define the connectors as the configuration while creating the spark session as mentioned in the code.<br>
 2.While working with any IDE you need to import the spark and hadoop environment variable in the project structure under settings.
