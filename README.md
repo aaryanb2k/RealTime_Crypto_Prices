@@ -1,6 +1,11 @@
 # RealTime_Crypto_Prices
 This Project is about fetching the top trending CryptoCoins from CoinMarketCap using CoinMarket API along with the their prices,volume in 24hrs and other details and using apache kafka to ingest the data in real time and performing analysis and transformations on the data using Apache spark and storing the streaming data to MongoDb Atlas.
 
+## Toolbox 🧰
+<img src="https://cdn.worldvectorlogo.com/logos/python-5.svg" width="50" height="50" alt="Python"/> &emsp; <img src="https://cdn.worldvectorlogo.com/logos/apache-spark-5.svg" width="70" alt="Apache Spark" height="70"/>
+&emsp; <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/apachekafka/apachekafka-original-wordmark.svg" width ="90" height="75" alt="Apache Kafka"/>
+&emsp;<img src ="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/mongodb/mongodb-original-wordmark.svg" width="70" height="70" alt="Mongo Db"/>
+
 ## Installation Steps
 1.First we need to install Python(3.7) and java(jdk 8) On the machine for this projet to work appropriately.<br>
 2.After the successful installation of above we need to download and <a href="https://kafka.apache.org/">Install Kafka</a> version 2.6.0 with scala version 2.12.<br>
